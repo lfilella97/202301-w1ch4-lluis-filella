@@ -13,6 +13,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@fontsource/nunito": "^4.5.11",
     "parcel": "^2.8.2",
     "rimraf": "^3.0.2"
   }
