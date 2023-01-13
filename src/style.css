@@ -22,27 +22,29 @@ body {
   margin: 0;
   background-color: #ffffff;
   font-family: var(--typography-main);
-  width: 100vw;
   height: 100vh;
 }
 .activities-section {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  padding: 0 75px;
 }
 .activities-section__title {
+  color: var(--color-main);
   font-weight: 900;
+  padding: 0 25px;
 }
 .text-view-all {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 100px;
   width: 100%;
+  padding: 0 25px;
 }
 .text-view-all__text {
   font-weight: 900;
   font-size: 4.6rem;
+  align-items: center;
 }
 
 .text-view-all__button {
@@ -58,16 +60,78 @@ body {
   width: 140px;
 }
 
-@media screen and (max-width: 970px) {
+.activities-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.card {
+  position: relative;
+  padding: 25px 25px;
+}
+.card__image {
+  border-radius: 35px;
+  border: 1px solid rgb(151, 151, 151);
+  object-fit: none;
+  width: 432px;
+  height: 535px;
+}
+
+.card__text {
+  position: absolute;
+  opacity: 0;
+  top: 100;
+  left: 130;
+  transition: opacity 500ms;
+  font-size: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 207px;
+  left: 126px;
+  font-weight: 800;
+  text-shadow: rgba(255, 255, 255, 0.628) 1.5px 1.5px;
+}
+
+.card__text:hover {
+  opacity: 1;
+}
+
+@media screen and (max-width: 1130px) {
+  .activities-section {
+    align-items: center;
+  }
+  .activities-section__title {
+    font-size: 1.3rem;
+  }
   .text-view-all {
     flex-direction: column;
-    padding: 50px;
+    padding: 0 0 50px;
+    gap: 50px;
   }
   .text-view-all__text {
     font-size: 2.7rem;
   }
 
   .text-view-all__button {
-    font-size: 0.8rem;
+    font-size: 1rem;
+  }
+  .activities-list {
+    justify-content: center;
+  }
+  .card__image {
+    width: 450px;
+    height: 300px;
+  }
+  .card__text {
+    font-size: 1.4rem;
+    top: 250;
+    left: 180;
+    opacity: 1;
+    text-shadow: none;
+  }
+  .activities__activitie,
+  .activities__title {
+    color: white;
   }
 }
