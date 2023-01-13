@@ -80,8 +80,8 @@ body {
 .card__text {
   position: absolute;
   opacity: 0;
-  top: 100;
-  left: 130;
+  top: 100px;
+  left: 130px;
   transition: opacity 500ms;
   font-size: 2.5rem;
   display: flex;
@@ -125,8 +125,8 @@ body {
   }
   .card__text {
     font-size: 1.4rem;
-    top: 250;
-    left: 180;
+    top: 250px;
+    left: 180px;
     opacity: 1;
     text-shadow: none;
   }
